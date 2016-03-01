@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-var phonecatControllers = angular.module('phonecatControllers', []);
+var phonecatControllers = angular.module('ClientControllers', []);
 
 //phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
 //	function($scope, Phone) {
@@ -11,15 +11,9 @@ var phonecatControllers = angular.module('phonecatControllers', []);
 //	}
 //]);
 
-phonecatControllers.controller('MyPhoneListCtrl', ['$scope', 'MyPhone',
-	function($scope, MyPhone) {
-		MyPhone.query({
-			phoneId: 'phones-list.json'
-		}, function(_phones) {
-			console.info('phones size = ' + _phones.length);
-			$scope.phones = _phones;
-		});
-		$scope.orderProp = 'age';
+phonecatControllers.controller('ClientListController', ['$scope',
+	function($scope) {
+		$scope.testResult = 'test is running!';
 	}
 ]);
 
@@ -41,17 +35,17 @@ phonecatControllers.controller('MyPhoneListCtrl', ['$scope', 'MyPhone',
 //	}
 //]);
 
-phonecatControllers.controller('MyPhoneDetailCtrl', ['$scope', '$routeParams', 'MyPhone',
-	function($scope, $routeParams, MyPhone) {
-		$scope.phone = MyPhone.get({
-			phoneId: $routeParams.phoneId + '.json'
-		}, function(phone) {
-			console.info("phone ---> " + JSON.stringify(phone));
-			$scope.mainImageUrl = phone.images[0];
-		});
-
-		$scope.setImage = function(imageUrl) {
-			$scope.mainImageUrl = imageUrl;
-		}
-	}
-]);
+//phonecatControllers.controller('MyPhoneDetailCtrl', ['$scope', '$routeParams', 'MyPhone',
+//	function($scope, $routeParams, MyPhone) {
+//		$scope.phone = MyPhone.get({
+//			phoneId: $routeParams.phoneId + '.json'
+//		}, function(phone) {
+//			console.info("phone ---> " + JSON.stringify(phone));
+//			$scope.mainImageUrl = phone.images[0];
+//		});
+//
+//		$scope.setImage = function(imageUrl) {
+//			$scope.mainImageUrl = imageUrl;
+//		}
+//	}
+//]);

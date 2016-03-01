@@ -1,21 +1,21 @@
 'use strict';
 
 /* App Module */
-var phonecatApp = angular.module('phonecatApp', ['ngRoute', 'phonecatAnimations', 'phonecatControllers', 'phonecatFilters', 'phonecatServices']);
+var xtggApp = angular.module('xtggApp', ['ngRoute', 'ClientControllers']);
 
-phonecatApp.config(['$routeProvider',
+xtggApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
-		when('/phones', {
-			templateUrl: 'partials/phone-list.html',
-			controller: 'MyPhoneListCtrl'
+		when('/', {
+			templateUrl: 'partials/client_list.html',
+			controller: 'ClientListController'
 		}).
-		when('/phones/:phoneId', {
-			templateUrl: 'partials/phone-detail.html',
-			controller: 'MyPhoneDetailCtrl'
-		}).
+//		when('/phones/:phoneId', {
+//			templateUrl: 'partials/phone-detail.html',
+//			controller: 'MyPhoneDetailCtrl'
+//		}).
 		otherwise({
-			redirectTo: '/phones'
+			redirectTo: '/'
 		});
 	}
 ]);
