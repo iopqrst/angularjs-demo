@@ -1,0 +1,88 @@
+{
+	"code": "1",
+	"msg": "",
+	"data": {
+		"clientList": [
+			{
+				"clientId": 10001,
+				"clientName": "张1",
+				"mobile": "18701046841",
+				"regTime":"2015-12-12",
+				"age":23,
+				"gender":0,
+				"clientType":0,
+				"grade": "1,3",
+				"isInvited":0,
+				"invitedType":1,
+				"areaId":565,
+				"source":"bsksugar",
+				"lastUploadTime":"2016-02-11 10:33:20",
+				"avaliabled":"10011"
+			},
+			{
+				"clientId": 10002,
+				"clientName": "张2",
+				"mobile": "18701046842",
+				"regTime":"2015-12-12",
+				"age":23,
+				"gender":0,
+				"clientType":0,
+				"grade": "1,3",
+				"isInvited":0,
+				"invitedType":1,
+				"areaId":565,
+				"source":"bsksugar",
+				"lastUploadTime":"2016-02-11 10:33:20",
+				"avaliabled":""
+			},
+			{
+				"clientId": 10003,
+				"clientName": "张3",
+				"mobile": "18701046843",
+				"regTime":"2015-12-12",
+				"age":23,
+				"gender":0,
+				"clientType":0,
+				"grade": "1,3",
+				"isInvited":0,
+				"invitedType":1,
+				"areaId":565,
+				"source":"bsksugar",
+				"lastUploadTime":"2016-02-11 10:33:20",
+				"avaliabled":""
+			},
+			{
+				"clientId": 10004,
+				"clientName": "张4",
+				"mobile": "18701046844",
+				"regTime":"2015-12-12",
+				"age":23,
+				"gender":0,
+				"clientType":0,
+				"grade": "1,3",
+				"isInvited":0,
+				"invitedType":1,
+				"areaId":565,
+				"source":"bsksugar",
+				"lastUploadTime":"2016-02-11 10:33:20",
+				"avaliabled":""
+			},
+			{
+				"clientId": 10005,
+				"clientName": "张5",
+				"mobile": "18701046845",
+				"regTime":"2015-12-12",
+				"age":23,
+				"gender":0,
+				"clientType":0,
+				"grade": "1,3",
+				"isInvited":0,
+				"invitedType":1,
+				"areaId":565,
+				"source":"bsksugar",
+				"lastUploadTime":"2016-02-11 10:33:20",
+				"avaliabled":"10011"
+			}
+		]
+	}
+}
