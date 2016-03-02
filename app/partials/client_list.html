@@ -221,66 +221,21 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr ng-repeat="client in clientList">
 						<td>
 							<input type="checkbox">
 						</td>
-						<td><a target="" href="javascript:void(0);">---</a>
-							<br>2016-01-28</td>
-						<td><a href="javascript:void(0);" onclick="window.parent.callPhone(15810369733);" title="点击拨号">15810369733</a></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;&nbsp;</td>
-						<td>普通用户/一般</td>
-						<td>医生邀请</td>
-						<td><a href="javascript:;">爱奥乐</a></td>
-						<td>aiaole</td>
-						<td>2016-01-28 10:11:26</td>
-						<td></td>
-						<td class="client-caozuo">
-							<a>分配负责人</a>
-							<a>生成健康报告</a>
-							<br>
-							<a>生成简易报告</a>
-							<a>隐形档案</a>
-						</td>
-					</tr>
-					<tr>
 						<td>
-							<input type="checkbox">
-						</td>
-						<td><a target="" href="javascript:void(0);">MU_801462</a>
-							<br>2016-01-25</td>
-						<td><a href="javascript:void(0);" onclick="window.parent.callPhone(15810369733);" title="点击拨号">15810369733</a></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;&nbsp;</td>
+							<a target="" href="javascript:void(0);">{{client.clientName}}</a>
+							<br>{{client.regTime}}</td>
+						<td><a href="javascript:void(0);" title="点击拨号">{{client.mobile}}</a></td>
+						<td>{{client.gender == 0 ? "男":"女"}}</td>
+						<td>{{client.age}}</td>
 						<td>普通用户/一般</td>
-						<td></td>
-						<td><a href="javascript:;">CMCC-和</a></td>
-						<td>cmcc</td>
-						<td></td>
-						<td></td>
-						<td class="client-caozuo">
-							<a>分配负责人</a>
-							<a>生成健康报告</a>
-							<br>
-							<a>生成简易报告</a>
-							<a>隐形档案</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="checkbox">
-						</td>
-						<td><a target="" href="javascript:void(0);">MU_801462</a>
-							<br>2016-01-25</td>
-						<td><a href="javascript:void(0);" onclick="window.parent.callPhone(15810369733);" title="点击拨号">15810369733</a></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;&nbsp;</td>
-						<td>普通用户/一般</td>
-						<td></td>
-						<td><a href="javascript:;">CMCC-和</a></td>
-						<td>cmcc</td>
-						<td></td>
+						<td><span ng-if="client.isInvited == 1">{{client.invitedType===1?"医生邀请":"患者邀请"}}</span></td>
+						<td><a href="javascript:;">{{client.areaId | getAreaId}}</a></td>
+						<td>{{client.source | getSource}}</td>
+						<td>{{client.lastUploadTime}}</td>
 						<td></td>
 						<td class="client-caozuo">
 							<a>分配负责人</a>
